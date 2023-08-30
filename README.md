@@ -7,5 +7,7 @@
 
 Svelte Kit - https://kit.svelte.dev/
 PocketBase - https://https://pocketbase.io/
-MailHog - https://github.com/mailhog/MailHog
+MailHog - https://github.com/mailhog/MailHog  
+> use
+```curl -LO https://github.com/mailhog/MailHog/releases/download/v1.0.0/MailHog_linux_amd64```  
 PicoCSS - https://picocss.com/
