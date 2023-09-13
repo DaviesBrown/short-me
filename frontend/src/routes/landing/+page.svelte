@@ -181,14 +181,14 @@
         new tooling and infrastructures.
       </div>
       <div class="profile-links">
-        <a href="https://linkedin.com/nwosudavid">
-          <img src="favicon.png" alt="" class="link">
+        <a href="https://linkedin.com/in/nwosudavid">
+          <img src="link.png" alt="" class="link">
         </a>
         <a href="https://twitter.com/nwosudavid14">
-          <img src="favicon.png" alt="" class="x">
+          <img src="tweet.png" alt="" class="x">
         </a>
         <a href="https://github.com/daviesbrown">
-          <img src="favicon.png" alt="" class="git">
+          <img src="git.png" alt="" class="git">
         </a>
       </div>
     </div>
