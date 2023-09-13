@@ -15,6 +15,8 @@ npm create svelte@latest my-app
 ```
 
 ## Developing
+Add a .env file with your pocketbase uri  
+`PUBLIC_POCKETBASE_URL=""`
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 

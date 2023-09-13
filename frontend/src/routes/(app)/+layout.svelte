@@ -11,7 +11,7 @@
   <nav style="padding: 0 1rem;">
     <ul>
       <li>
-        <strong><a href="/">Shorty</a></strong>
+        <strong><a href="/">MaskMe</a></strong>
       </li>
     </ul>
     <ul>
@@ -26,8 +26,8 @@
         <li role="list" dir="rtl">
           <a href="/" aria-haspopup="listbox">
             <img
-              src="https://api.dicebear.com/5.x/thumbs/svg?radius=50&seed={data
-                .user.name}"
+              src={ "avatar0.svg" || `https://api.dicebear.com/5.x/thumbs/svg?radius=50&seed=${data
+                .user.name}`}
               alt="User Avatar"
               width="56"
             />
@@ -52,3 +52,9 @@
     <slot />
   </main>
 </div>
+
+<style>
+  img {
+    border-radius: 50%;
+  }
+</style>

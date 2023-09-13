@@ -43,6 +43,9 @@
         spellcheck="false"
       />
     </label>
+    {#if form?.error}
+      <p style="color: red;">{form.error}</p>
+    {/if}
 
     {#if form?.shortLink}
       <button
