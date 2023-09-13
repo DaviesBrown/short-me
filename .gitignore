@@ -10,4 +10,4 @@ app/package
 **/vite.config.ts.timestamp-*
 backend/*
 !backend/pb_schema.json
-
+t.txt

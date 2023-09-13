@@ -3,9 +3,9 @@ import { fail, redirect } from "@sveltejs/kit";
 import { getShortLink } from "$lib/utils";
 
 export const load = async ({ locals }) => {
-  if (!locals.user) {
+  /* if (!locals.user) {
     throw redirect(303, "/landing");
-  }
+  } */
 
   const top10Links = await locals.pb.collection("links").getFullList(10, {
     sort: "-clicks",
