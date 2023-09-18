@@ -1,4 +1,4 @@
-import { fail } from "@sveltejs/kit";
+import { fail, redirect } from "@sveltejs/kit";
 import { nanoid } from "nanoid/async";
 
 import pb from "$lib/pocketbase.js";
@@ -6,16 +6,9 @@ import { getShortLink } from "$lib/utils";
 import { DEFAULT_USERNAME, DEFAULT_PASSWORD } from "$env/static/public"
 
 export const load = async ({ locals }) => {
-  // loads default user if guest not logged in
+  // redirect user to login if not
   if (!locals.user) {
-    async function user() {
-      const authData = await locals.pb.collection('users').authWithPassword(
-        DEFAULT_USERNAME, 
-        DEFAULT_PASSWORD
-        );
-    }
-    await user()
-    locals.user = structuredClone(pb.authStore.model)
+    throw redirect(303, "/auth/login")
   }
 
   // return top 10 links for user
@@ -65,7 +58,7 @@ export const actions = {
           createdBy: locals.user?.id,
         });
       }
-      
+
       return {
         shortLink: getShortLink(uri.origin, shortSlug),
         url,

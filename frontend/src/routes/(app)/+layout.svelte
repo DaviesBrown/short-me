@@ -15,7 +15,7 @@
       </li>
     </ul>
     <ul>
-      {#if data.user.name === "default"}
+      {#if !data.user}
         <li>
           <a href="/auth/login"> <button class="outline">Login</button></a>
         </li>
