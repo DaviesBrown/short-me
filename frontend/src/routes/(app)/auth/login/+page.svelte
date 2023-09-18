@@ -1,7 +1,7 @@
 <script>
-  export let form
+  export let form;
 
-  let showModal
+  let showModal;
 </script>
 
 <h1>Login</h1>
@@ -9,7 +9,8 @@
   <input type="email" name="email" placeholder="Email" required />
   <input type="password" name="password" placeholder="Password" required />
   <small>
-    <a on:click={() => (showModal = true)}>Forgot Password?</a>
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <p on:click={() => (showModal = true)}>Forgot Password?</p>
   </small>
   {#if form?.error}
     <center style="color: crimson; margin:1rem">
@@ -39,3 +40,10 @@
     </form>
   </article>
 </dialog>
+
+
+<style>
+  p {
+    text-decoration: underline;
+  }
+</style>
