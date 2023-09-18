@@ -1,19 +1,19 @@
 <script>
-  import { fade } from "svelte/transition"
-  import { getShortLink } from "$lib/utils"
-  import { page } from "$app/stores"
-  export let data, form
-  let copied
+  import { fade } from "svelte/transition";
+  import { getShortLink } from "$lib/utils";
+  import { page } from "$app/stores";
+  export let data, form;
+  let copied;
 
   $: {
     if (copied) {
-      setTimeout(() => (copied = false), 2000)
+      setTimeout(() => (copied = false), 2000);
     }
   }
 
   const copy = (text) => {
-    navigator.clipboard.writeText(text)
-    copied = true
+    navigator.clipboard.writeText(text);
+    copied = true;
   }
 </script>
 
@@ -88,3 +88,7 @@
     </tbody>
   </table>
 </article>
+
+<style>
+  
+</style>
