@@ -29,7 +29,7 @@ export const actions = {
         .requestPasswordReset(data.get("email"));
     } catch (e) {
       console.log(e);
-      return fail(e.status, { error: e.message });
+      return fail(e.status, { error: e.message })
     }
 
     return {
