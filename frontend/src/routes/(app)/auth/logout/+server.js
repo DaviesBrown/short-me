@@ -1,7 +1,7 @@
-import { redirect } from "@sveltejs/kit"
+import { redirect } from "@sveltejs/kit";
 
 export const POST = ({ locals }) => {
-  locals.pb.authStore.clear()
-  locals.user = null
-  throw redirect(303, "/auth/login")
+  locals.pb.authStore.clear();
+  locals.user = null;
+  throw redirect(303, "/auth/login");
 }
