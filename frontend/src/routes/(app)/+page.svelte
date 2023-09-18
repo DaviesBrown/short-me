@@ -81,7 +81,15 @@
         <tr>
           <td>{i + 1}</td>
           <td>{link.url}</td>
-          <td><a href={getShortLink($page.url.origin, link.shortSlug)}>{link.shortSlug}</a></td>
+          <td>
+            <a 
+            href={getShortLink($page.url.origin, link.shortSlug)} 
+            target="_blank" 
+            rel="noreferrer"
+            >
+            {link.shortSlug}
+            </a>
+          </td>
           <td>{link.clicks}</td>
         </tr>
       {/each}
