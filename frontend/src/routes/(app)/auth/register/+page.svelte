@@ -1,5 +1,5 @@
 <script>
-  export let form
+  export let form;
 </script>
 
 <h1>Register</h1>
