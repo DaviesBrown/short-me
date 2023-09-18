@@ -1,6 +1,6 @@
 <script>
-  import "@picocss/pico"
-  export let data
+  import "@picocss/pico";
+  export let data;
 </script>
 
 <svelte:head>
@@ -11,11 +11,11 @@
   <nav style="padding: 0 1rem;">
     <ul>
       <li>
-        <strong><a href="/">MaskMe</a></strong>
+        <strong><a href="/">ShortLink</a></strong>
       </li>
     </ul>
     <ul>
-      {#if !data.user}
+      {#if data.user.name === "default"}
         <li>
           <a href="/auth/login"> <button class="outline">Login</button></a>
         </li>
