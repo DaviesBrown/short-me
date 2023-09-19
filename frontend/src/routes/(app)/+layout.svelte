@@ -26,7 +26,7 @@
         <li role="list" dir="rtl">
           <a href="/" aria-haspopup="listbox">
             <img
-              src={ "avatar0.svg" || `https://api.dicebear.com/5.x/thumbs/svg?radius=50&seed=${data
+              src={`https://api.dicebear.com/5.x/thumbs/svg?radius=50&seed=${data
                 .user.name}`}
               alt="User Avatar"
               width="56"
@@ -40,6 +40,7 @@
             </li>
             <li>
               <form action="/auth/logout" method="post" style="margin: 0;">
+                <button formaction="/auth/login" class="outline">Login</button>
                 <button type="submit" class="secondary">Logout</button>
               </form>
             </li>
