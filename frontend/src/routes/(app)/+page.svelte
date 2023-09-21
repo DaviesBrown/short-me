@@ -67,6 +67,7 @@
 
 <article>
   <h1>Your Top 10 Links</h1>
+  <div style="overflow-x:auto;">
   <table>
     <thead>
       <tr>
@@ -95,8 +96,5 @@
       {/each}
     </tbody>
   </table>
+  </div>
 </article>
-
-<style>
-  
-</style>
