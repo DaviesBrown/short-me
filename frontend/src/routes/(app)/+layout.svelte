@@ -40,7 +40,6 @@
             </li>
             <li>
               <form action="/auth/logout" method="post" style="margin: 0;">
-                <button formaction="/auth/login" class="outline">Login</button>
                 <button type="submit" class="secondary">Logout</button>
               </form>
             </li>
